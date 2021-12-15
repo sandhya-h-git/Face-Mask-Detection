@@ -5,9 +5,9 @@ Dataset: https://www.kaggle.com/prithwirajmitra/covid-face-mask-detection-datase
 
          The given dataset contains 3 directories:
          
-          i.	  The train directory contains 600 images belonging to 2 classes (Mask, Non Mask – 300 files in each class).
+          i.	The train directory contains 600 images belonging to 2 classes (Mask, Non Mask – 300 files in each class).
           
-          ii.	  The validation directory contains 306 images belonging to 2 classes (Mask, Non Mask – 153 files in each class)
+          ii.	The validation directory contains 306 images belonging to 2 classes (Mask, Non Mask – 153 files in each class)
           
           iii.	The test directory contains 100 images belonging to 2 classes (again Mask and Non Mask – 50 files in each class)
           
