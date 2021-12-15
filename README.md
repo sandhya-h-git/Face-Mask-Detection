@@ -2,24 +2,40 @@
 A Convolutional Neural Network model that classifies an image based on whether the person is wearing a face mask or not is built from scratch using Sequential API.
 
 Dataset: https://www.kaggle.com/prithwirajmitra/covid-face-mask-detection-dataset?select=New+Masks+Dataset
+
          The given dataset contains 3 directories:
+         
           i.	  The train directory contains 600 images belonging to 2 classes (Mask, Non Mask – 300 files in each class).
+          
           ii.	  The validation directory contains 306 images belonging to 2 classes (Mask, Non Mask – 153 files in each class)
+          
           iii.	The test directory contains 100 images belonging to 2 classes (again Mask and Non Mask – 50 files in each class)
+          
     
 First the required libraries are imported. This includes _tensorflow_ – _keras_ for building the model (_ImageDataGenerator_ for data preprocessing, Sequential model, _ModelCheckpoint_ for callbacks, _RMSprop_ for model compilation etc.) and _pandas_, _matplotlib_ (_DataFrame_ and _pyplot_ for visualising model history)
 
+
 The dataset is imported.
 
+
 For data Preprocessing, _ImageDataGenerator_ is used.
+
 The following has been performed on the training data:
+
     •	Rescaling
+    
     •	Rotation (40)
+    
     •	Width shift (0.2)
+    
     •	Height shift (0.2)
+    
     •	Shear (0.2)
+    
     •	Zoom (0.2)
+    
     •	Flip (horizontal)
+    
 The test data is also rescaled using _ImageDataGenerator_.
 
 The train and validation data required for building the model are generated using _flow_from_directory()_ after _ImageDataGenerator_ is used. Here the target size is fixed as 150x150 and the batch size is fixed as 10.
